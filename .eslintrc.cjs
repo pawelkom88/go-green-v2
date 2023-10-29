@@ -18,9 +18,8 @@ module.exports = {
     project: true,
     tsconfigRootDir: __dirname,
   },
-  plugins: ["react", "@typescript-eslint", "prettier", "sonar"],
+  plugins: ["react", "@typescript-eslint", "prettier", "sonar", "jsx-a11y"],
   rules: {
     "react/react-in-jsx-scope": 0,
-    "sonar/deprecation": 1,
   },
 };

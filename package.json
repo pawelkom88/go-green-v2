@@ -14,9 +14,9 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.{ts,tsx}": [
-      "npm run lint:fix",
-      "npm run test --watchAll=false --findRelatedTests --bail"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "vitest related --run"
     ]
   },
   "dependencies": {

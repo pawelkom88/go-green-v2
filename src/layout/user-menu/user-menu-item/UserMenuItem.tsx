@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { slugifyTitle } from "@src/utils/functions";
 
 interface UserMenuItem {
-  icon: JSX.Element;
+  icon: React.JSX.Element;
   title: string;
 }
 
@@ -13,7 +13,7 @@ function UserMenuItem({ icon, title }: UserMenuItem) {
         to={`/${slugifyTitle(title)}`}
         className="w-full flex flex-col items-center justify-center gap-2">
         {icon}
-        <span>{title}</span>
+        <span className="text-center">{title}</span>
       </Link>
     </li>
   );

@@ -6,7 +6,7 @@ const Header = () => {
       <header className={headerStyles}>
         <SearchBox />
       </header>
-      <main className="h-full p-4">
+      <main className="h-full">
         <Outlet />
       </main>
     </div>

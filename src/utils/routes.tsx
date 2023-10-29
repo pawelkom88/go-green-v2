@@ -1,5 +1,5 @@
-import Map from "../pages/map/Map.js";
-import ErrorPage from "../pages/map/error-page/ErrorPage";
+import Map from "../pages/map/POIMap.js";
+import ErrorPage from "../pages/error-page/ErrorPage.js";
 import Login from "../pages/login/Login";
 import UserProfile from "../pages/user-profile/UserProfile";
 

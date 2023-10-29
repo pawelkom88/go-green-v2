@@ -1,20 +1,15 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
+import Header from "@layout/header/Header";
+import MobileMenu from "@layout/mobile-menu/MobileMenu";
+import Sidebar from "@layout/sidebar/Sidebar";
 
-export function App() {
+function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
+    <div className="flex flex-col h-screen w-full md:flex-row">
+      <MobileMenu />
+      <Sidebar />
+      <Header />
+    </div>
   );
 }
 
-export function WrappedApp() {
-  return (
-    <HashRouter>
-      <App />
-    </HashRouter>
-  );
-}
+export default App;

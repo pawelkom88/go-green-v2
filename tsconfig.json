@@ -1,5 +1,23 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@layout/*": ["src/layout/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@src/*": ["src/*"],
+      "@pages/*": ["src/pages/*"]
+
+      // "@hooks/*": ["hooks/*"],
+      // "@helpers/*": ["helpers/*"],
+      // "@constants/*": ["constants/*"],
+      // "@styles/*": ["styles/*"],
+      // "@types/*": ["types/*"],
+      // "@features/*": ["features/*"],
+      // "@lib/*": ["lib/*"],
+      // "@context/*": ["context/*"],
+      // "@store/*": ["store/*"]
+    },
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
@@ -19,7 +37,9 @@
   "include": [
     "vite.config.ts",
     ".eslintrc.cjs",
-    "src"
+    "tailwind.config.js",
+    "src",
+    "postcss.config.js"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

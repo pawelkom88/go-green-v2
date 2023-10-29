@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-font: "Nunito Variable";
+  --primary-clr: #164a41;
+  --secondary-clr: #f1b24a;
+  --teriary-clr: #9dc88d;
+  --text-clr-light: #fff;
+  --text-clr-dark: #111827;
+  --warning-clr: #f44336;
+}
+
+body {
+  font-family: var(--main-font), sans-serif;
+}
+
+h1 {
+  font-family: var(--main-font), sans-serif;
+}
+
+*:focus {
+  outline: 3px solid var(--secondary-clr);
+}
